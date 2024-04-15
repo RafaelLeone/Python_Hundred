@@ -1,2 +1,4 @@
+colorgram.py==1.2.0
+pillow==10.3.0
 prettytable==3.10.0
 wcwidth==0.2.13
