@@ -38,3 +38,14 @@ True or False quiz which we learn to model on Dr. Angela's course.
 
 Note: if you create a quiz that needs more than the question text and its one answer, 
 you may need to change the quiz_brain class we've created.
+
+## Day 18
+
+![Example Image](images/day-18.png)
+
+Day 18 has some challenges that are comments. To run them, manually comment
+all challenges except the one you want to run. Pay attention to setup variables
+that should never be comments, otherwise the code will result in errors.
+The last challenge should be runnable by default and is presented on the image above.
+
+Note: These challenges focus on logic, instead of the usual OOP the course have been teaching.
