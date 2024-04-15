@@ -21,4 +21,15 @@ from prettytable import PrettyTable
 
 # Table
 table = PrettyTable()
+
+table.field_names = ["Name", "Type", "Type2",]
+table.add_rows(
+    [
+        ["Pikachu", "Electric", "",],
+        ["Pidgeot", "Normal", "Flying",],
+    ]
+)
+
+table.align = "l"
+
 print(table)
