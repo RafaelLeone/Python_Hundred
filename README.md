@@ -21,6 +21,14 @@ In this example we used VScode as our IDE, which let you select an interpreter b
 
 ## Day 16
 
+![Example Image](images/day-16.png)
 The oop-coffe-machine-start folder contains the main.py archive that should be run.
 The documentation for the coffee machine code that Dr. Angela Yu developed is not present
 in this repo, but it should be understandable by what's on the main.py archive alone.
+
+## Day 17
+
+The quiz-game-start folder contains the main.py archivbe that should be run.
+In this folder, it is actually recommended to change the question_model and data archives
+according to what kind of quiz you'd like to create. By default, it contains a simple
+True or False quiz which we learn to model on Dr. Angela's course.
