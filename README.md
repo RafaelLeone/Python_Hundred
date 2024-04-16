@@ -41,7 +41,7 @@ you may need to change the quiz_brain class we've created.
 
 ## Day 18
 
-![Example Image](images/day-18.png)
+![Example Image](images/day-18.GIF)
 
 Day 18 has some challenges that are comments. To run them, manually comment
 all challenges except the one you want to run. Pay attention to setup variables
