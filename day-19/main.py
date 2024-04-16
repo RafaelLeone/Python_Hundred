@@ -29,6 +29,7 @@ while lane_height >= LAST_LANE_HEIGHT:
 
 # Example
 turtle_racers['turtle_3'].forward(100)
+turtle_racers['turtle_5'].forward(200)
 
 # Next
 # Try putting the color the person chose in a random spot by

@@ -49,3 +49,10 @@ that should never be comments, otherwise the code will result in errors.
 The last challenge should be runnable by default and is presented on the image above.
 
 Note: These challenges focus on logic, instead of the usual OOP the course have been teaching.
+
+## Day 19
+
+![Example Image](images/day-19.GIF)
+
+Day 19 is a simple game creating challenge, but we were able to advance on organization
+and Python logic skills.
