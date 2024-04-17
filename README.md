@@ -56,3 +56,9 @@ Note: These challenges focus on logic, instead of the usual OOP the course have 
 
 Day 19 is a simple game creating challenge, but we were able to advance on organization
 and Python logic skills.
+
+## Day 20 & 21
+
+![Example Image](images/day-20-21.GIF)
+
+We create a game based on the classic Snake, using everything we learned until now.
