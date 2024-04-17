@@ -7,6 +7,7 @@ class Snaky:
         self.size = 3
         self.block_size = 20
         self.snake_blocks = {}
+        self.create_snaky()
 
     def create_snaky(self):
         current_position = 0

@@ -1,5 +1,6 @@
 from turtle import Screen
 from snake import Snaky
+from food import Food
 
 
 # Screen setup.
@@ -15,7 +16,7 @@ game = True
 
 # Create Snaky.
 snake = Snaky()
-snake.create_snaky()
+food = Food()
 
 # Control Snaky
 screen.listen()
@@ -28,6 +29,10 @@ screen.onkey(key="Right", fun=snake.right)
 while game:
     screen.update()
     snake.move_snaky()
+
+    # Detect collision with food.
+    if snake.snake_blocks[0].distance(food) < 21:
+        food.refresh()
 
 # Quit.
 screen.exitonclick()
