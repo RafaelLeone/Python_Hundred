@@ -1,6 +1,7 @@
 from turtle import Screen
 from snake import Snaky
 from food import Food
+from scoreboard import Scoreboard
 
 
 # Screen setup.
@@ -17,6 +18,7 @@ game = True
 # Create Snaky.
 snake = Snaky()
 food = Food()
+scoreboard = Scoreboard()
 
 # Control Snaky
 screen.listen()
@@ -33,6 +35,15 @@ while game:
     # Detect collision with food.
     if snake.snake_blocks[0].distance(food) < 21:
         food.refresh()
+        scoreboard.increase_score()
+
+    # Detect collision with wall.
+    if (snake.snake_blocks[0].xcor() > 280 
+     or snake.snake_blocks[0].xcor() < -300 
+     or snake.snake_blocks[0].ycor() > 300 
+     or snake.snake_blocks[0].ycor() < -280):
+        game = False
+        scoreboard.game_over()
 
 # Quit.
 screen.exitonclick()
