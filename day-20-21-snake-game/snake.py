@@ -12,12 +12,20 @@ class Snaky:
     def create_snaky(self):
         current_position = 0
         for i in range(self.size):
-            self.snake_blocks[i] = Turtle()
-            self.snake_blocks[i].color((255, 255, 255))
-            self.snake_blocks[i].shape("square")
-            self.snake_blocks[i].penup()
-            self.snake_blocks[i].setx(current_position)
             current_position -= self.block_size
+            self.add_block(i)
+
+    def add_block(self, i):
+        self.snake_blocks[i] = Turtle()
+        self.snake_blocks[i].color((255, 255, 255))
+        self.snake_blocks[i].shape("square")
+        self.snake_blocks[i].penup()
+        self.snake_blocks[i].setx(i)
+
+    def extend(self):
+        last_value = list(self.snake_blocks.keys())[-1]+1
+        self.size += 1
+        self.add_block(last_value)
 
     def move_snaky(self):
         time.sleep(0.06)
