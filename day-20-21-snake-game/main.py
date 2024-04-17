@@ -47,9 +47,7 @@ while game:
         scoreboard.game_over()
 
     # Detect collision with tail.
-    for block in snake.snake_blocks.values():
-        if block == snake.snake_blocks[0]:
-            continue
+    for block in list(snake.snake_blocks.values())[1:]:
         if snake.snake_blocks[0].distance(block) < 10:
             game = False
             scoreboard.game_over()
