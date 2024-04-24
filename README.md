@@ -19,7 +19,7 @@ We start from Day 16 for OOP studies, which is recommended for intermediate lear
 And if you're using a virtual environment you may have to select it as your interpreter.
 In this example we used VScode as our IDE, which let you select an interpreter by clicking a non-working import, for example.
 
-## Day 16
+## Day 16 (INTERMEDIATE_A start)
 
 ![Example Image](images/day-16.png)
 
@@ -62,3 +62,15 @@ and Python logic skills.
 ![Example Image](images/day-20-21.GIF)
 
 We create a game based on the classic Snake, using everything we learned until now.
+
+## Day 25 & 26 (INTERMEDIATE_B start)
+
+We learn pandas to edit and create csv archives using Python's abilities to open documents
+with "with" and "open" and to create dictionaries and list in one line by using list and dict comprehension.
+
+## Day 27
+
+![Example Image](images/day-27.GIF)
+
+We learn about *args, **kwargs and tkinter, creating a simple tkinter project: The miles to km converter
+and the lb to kg converter.
