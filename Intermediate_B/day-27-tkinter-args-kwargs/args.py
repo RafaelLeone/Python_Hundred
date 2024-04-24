@@ -33,3 +33,8 @@ class Car:
 
 my_car = Car(make="Nissan")
 print(my_car.model)
+
+def deeper_calculate(n, *args, **kwargs):
+    print(n, args, kwargs)
+
+deeper_calculate(4, 5, 6, 7, x=10, y=15)
