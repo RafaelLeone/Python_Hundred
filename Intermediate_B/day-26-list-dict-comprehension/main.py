@@ -47,6 +47,19 @@ file_path = os.path.join(script_dir, f"{file_name}.csv")
 data = pandas.read_csv(file_path)
 nato_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 print(nato_dict)
-user_name = input("Enter name: ").upper()
-nato_list = [nato_dict[letter] for letter in user_name]
-print(nato_list)
+
+def generate_nato_name():
+    user_name = input("Enter name: ").upper()
+    if user_name == 'X':
+        exit()
+    try:
+        nato_name = [nato_dict[letter] for letter in user_name]
+    except:
+        print("Sorry, no numbers or letters out of english alphabet allowed.")
+        return generate_nato_name()
+    else:
+        print(nato_name)
+    # finally:
+    #     print("Try more names!\n")
+
+generate_nato_name()
