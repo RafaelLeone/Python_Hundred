@@ -3,7 +3,7 @@ import os
 
 
 new_data = {
-    "website2": {
+    "website": {
         "email": "email",
         "password": "password",
     }
@@ -29,3 +29,19 @@ else:
         json.dump(data, data_file, indent=4)
 finally:
     print("Done")
+
+def find_website(site):
+    try:
+        with open(file_path, 'r') as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError as error:
+        print(error + "Sorry!")
+    else:
+        if site in data:
+            email = data[site]["email"]
+            password = data[site]["password"]
+            print("email: ", email + "\npassword: ", password)
+        else:
+            print("Site does not exist in data.")
+
+find_website("website2")
