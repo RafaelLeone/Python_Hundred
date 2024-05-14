@@ -22,8 +22,11 @@ def get_info(data):
     return process_info(info)
 
 def process_info(data):
-    result = data.text.split('\n')
-    return result[1].replace(', ', '\n')
+    try:
+        result = data.text.split('\n')
+        return result[1].replace(', ', '\n')
+    except:
+        return data.text
 
 def get_time(data):
     return driver.find_element(By.XPATH, value=f"//table/tbody/tr[1]/td[{data}]")
